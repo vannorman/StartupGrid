@@ -1,0 +1,964 @@
+
+/* 
+	Polka dot pattern from http://jsfiddle.net/leaverou/RtGsM/
+	body {
+	    background:
+	        -moz-radial-gradient(white 15%, transparent 16%),
+	        -moz-radial-gradient(white 15%, transparent 16%),
+	        black;
+	    background:
+	        -webkit-radial-gradient(white 15%, transparent 16%),
+	        -webkit-radial-gradient(white 15%, transparent 16%),
+	        black;
+	    background-position: 0 0, 10px 10px;
+	    
+	    -webkit-background-size:20px 20px;
+	    -moz-background-size:20px 20px;
+	    background-size:20px 20px;
+	}
+	
+*/
+
+.noFocus {
+	font-size: 1.1em;
+	margin-left:15px;
+}
+.noFocus:focus {
+	border:none;
+	outline:none;
+	outline: 0;
+
+}
+
+/* isotope animations */
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+
+
+/*
+ sweet transparencies http://css-tricks.com/6565-yay-for-hsla/  
+*/
+.button {
+	width:85px;
+     height:29px;
+     line-height:29px;
+     -webkit-border-radius: 9px;
+		-moz-border-radius: 9px;
+             border-radius: 9px;
+    text-align:center;
+	font-size:.91em;	
+     font-family:"Arial", Arial, sans-serif; /* should be Lucida Grande regular */
+
+     background: #ffe48e; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffe48e 0%, #ffb200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe48e), color-stop(100%,#ffb200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffe48e 0%,#ffb200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffe48e 0%,#ffb200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffe48e 0%,#ffb200 100%); /* IE10+ */
+	background: linear-gradient(top, #ffe48e 0%,#ffb200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe48e', endColorstr='#ffb200',GradientType=0 ); /* IE6-9 */
+	 border:1px solid #f79400;
+	z-index:100010;	
+}
+
+
+	.button a {
+		display:block;
+		color:black;
+		}
+	.button a:hover {
+		display:block;
+		color:black;
+		
+		background-color:#ffc300;
+	     -webkit-border-radius: 9px;
+			-moz-border-radius: 9px;
+	             border-radius: 9px;
+		cursor:pointer;
+	}
+	
+	.button a:active {
+		background: #1e5799; /* Old browsers */
+		background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+		background: linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+		border: 1px solid blue;
+	}
+	
+	#login {
+	     position:fixed;
+		top:500px;
+		left:50%;
+		margin-left:-405px;
+	}
+
+	
+	#contact {
+	    position:fixed;
+		top:500px;
+		left:50%;
+		margin-left:-508px;
+	
+	}
+		
+	
+#leftContainer {
+	position:fixed;left:50%;top:10px;margin-left:-512px;
+	height:530px;width:200px;
+	color:white;
+	/*background-color:hsla(197,77%,61%,.8);*/
+	/*background-color:hsla(220,30%,0%,.9);*/
+	background-color:#333;
+
+
+	z-index:100009;	
+	text-align: center;
+}
+
+	#titleTagline {
+		position:absolute;left:10px;top:215px;	
+		font-size:1.4em;
+	}
+
+	#titleDescription {
+		position:absolute;left:10px;top:305px;
+		width:170px;
+		font-size:1em;
+		z-index:1000100;
+	
+	}
+	
+
+
+#cssIsRetarded {
+width:1024px;position:relative;margin:auto;height:22px;
+}
+
+#loginContainer {
+	position:absolute;top:0;width:100%;height:22px;
+}
+
+
+#EditStartupContainer {
+	background-color:rgba(255,255,255,.6);
+	position:fixed; top:0;left:0;
+	width:100%;height:100%;
+	z-index:10000;
+}
+
+#EditStartup {
+	width:630px;
+	height:255px;
+	text-align:center;
+	position:relative;	top:150px;
+	margin:auto;
+	color:black;
+	-webkit-border-radius: 22px 22px 22px 0;
+	   -moz-border-radius: 22px 22px 22px 0;
+            border-radius: 22px 22px 22px 0; 
+    border: 5px solid #BBB; 
+	z-index:10001;
+}
+
+#loading {
+	position:relative; top:280px; margin:0 auto;
+	padding:20px;
+	width:300px;height:250px;
+	font-size:24px;
+	color:black;
+	background-image:url('http://zanstra.home.xs4all.nl/_p/piped/clientapps.gif');
+	background-size:15%;
+	background-position:center;
+	background-repeat: no-repeat;
+		-webkit-border-radius: 15px;
+		   -moz-border-radius: 15px;
+	            border-radius: 15px;
+	border:3px solid black;
+	}
+
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+          transition: none;
+}
+
+
+/**** Base styles ****/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+
+h1, h2, h3, p, ul, ol, pre, dl {
+  margin-bottom: 1.0em;
+}
+
+h1, h2, #super-list, .element, .tagline, #index-list, 
+.super-list .link {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1, h2, h3 { font-weight: bold; }
+
+h1 {
+  font-size: 32px;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.1em;
+}
+
+ul, ol {
+  margin-left: 1.5em;
+}
+
+a,
+a code {
+  color: #FB4;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover code { 
+  color: #4BF; 
+}
+
+a:active,
+a:active code {
+  color: #1FB;
+  background: black;
+}
+
+a img { border: none; }
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+blockquote {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  border-left: 1px solid #333;
+  font-style: italic;
+}
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+  background:fixed;
+  background-color:white;
+  /*background-image:url('../img/colorgrid.png');*/
+  background-size:100%;
+  background-attachment: fixed;
+  
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#StartupGridLogoContainer {
+	position:fixed;top:29px;left:0;
+	margin: 0px 0 0 50%;
+	padding-right:40px;
+	width:512px;
+	height:256px;
+	/*outline:1px dotted purple;*/
+}
+
+#StartupGridLogo {
+
+	position:absolute;top:-25px;
+	margin-left:-520px;margin-top:0px;
+	width:206px;
+	height:200px;
+
+	
+	/*background-color:blue;*/
+
+	background-image:url('../img/newlogo.png');
+	background-size:100%;
+	background-repeat: no-repeat;
+	z-index:100010;	
+	border-bottom: 2px dashed white;
+	
+
+}
+
+#containerBox {
+	position:relative;
+	top:253px;
+	left:100px;
+	width:850px;
+	height:1000px;
+	margin: 15px auto;
+	margin-top:-15px;
+	/*outline: 4px solid blue;*/
+}
+
+#container {
+	display:none; /* setTimeout function turns this on after 2.5 seconds to prevent weird loading effects for many divs at startup */
+	/*position:absolute;top:225px;*/
+	width:850px; /* 768 + added a little because isotope wraps each startup to the next line even tho there is enough width */
+	height:10000px;
+	padding-left:0px;
+	/*border: 2px solid gray;*/
+	/*outline: 1px solid green;*/
+}
+
+
+
+
+
+
+#introContainer {
+	display:block;
+	width:1024px;
+	height:200px;
+	/*outline:2px dotted red;*/
+	text-align:center;
+}
+	#intro {
+		position:absolute;
+		margin-left:256px;
+		margin-top:15px;
+		margin-bottom:10px;
+		display:block;
+		width:512px;
+		height:200px; 
+	    border: 3px solid #777; 
+	    color:white;
+	    background-color:#38afe7;
+	    
+	    /*outline:1px solid blue;*/
+	
+	}
+
+	#introTitle {
+		font-size:3em;
+		text-align:left;
+		margin:0 20px 0;
+	}
+	
+	
+	
+	#introContent {
+		width:500px;
+		font-size:1.3em;
+		word-wrap:normal;
+		white-space: normal;
+		margin:0 20px 0;
+		text-align:left;
+		}
+	
+	
+	#introClose {
+		position:absolute;
+		top:3px;right:3px;
+		width:20px; height:20px;
+		line-height:20px;
+		-webkit-border-radius: 15px;
+		   -moz-border-radius: 15px;
+	            border-radius: 15px;
+	    border: 3px solid #BBB;
+	    text-align:center;
+	    
+	    /*outline:1px solid red; */
+	    }
+	
+	#introClose:hover {
+		background-color:gray;
+		cursor:pointer;
+	    }
+
+.rounded {
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	     -o-border-radius: 10px;	   
+            border-radius: 10px;
+}
+
+.roundedBig {
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	     -o-border-radius: 15px;	   
+            border-radius: 15px;
+
+}
+
+.innerShadow {
+  -webkit-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+     -moz-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+       -o-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+          box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+}
+
+
+/* Money group 		- Gray */
+.startup.finance		{ background: #444; background: hsl(   0, 100%, 50%); } /* Needs textures */
+.startup.marketplace	{ background: #666; background: hsl(   0, 100%, 50%); }
+.startup.realestate		{ background: #888; background: hsl(   0, 100%, 50%); }
+
+/* Lifestyle group 	- Orange to Yellow */
+.startup.lifestyle		{ background: #F80; background: hsl(   0, 100%, 50%); }
+.startup.travel			{ background: #FA0; background: hsl(   0, 100%, 50%); }
+.startup.food			{ background: #FC0; background: hsl(   0, 100%, 50%); }
+.startup.sports			{ background: #FF0; background: hsl(   0, 100%, 50%); }
+
+/* Green, Energy 	- Green to Teal */
+.startup.greentech		{ background: #0F0; background: hsl(   0, 100%, 50%); }
+.startup.energy			{ background: #0F8; background: hsl(   0, 100%, 50%); }
+
+/* Social, Games, Education - Blue * /
+.startup.education		{ background: #00F; background: hsl(   0, 100%, 50%); }
+.startup.social			{ background: #06F; background: hsl(   0, 100%, 50%); }
+.startup.entertainment	{ background: #39F; background: hsl(   0, 100%, 50%); }
+.startup.games			{ background: #6CF; background: hsl(   0, 100%, 50%); }*/
+
+/* Engineering, Health, Tech - Red */
+.startup.engineering	{ background: #F00; background: hsl(   0, 100%, 50%); }
+.startup.health			{ background: #F39; background: hsl(   0, 100%, 50%); }
+
+/* Define what each Startup thing will look like */
+	.logo {
+		position:absolute;
+		left:5px;
+		top:5px;
+		height:50px;
+		width:50px;
+		}
+	
+	.nameContainer {
+		position:absolute;
+		left: 60px;
+		top:10px;
+		width: 145px;
+		height:50px;
+		overflow:hidden;
+		white-space: normal;
+		word-wrap: normal;		
+		vertical-align: bottom;
+		
+	}
+	
+	.name {
+		
+		position:absolute;
+		bottom:0;
+
+		font-size: 1.5em;
+		line-height: 1.0em;
+		color: #000;
+		text-align:left;
+	}
+	
+	.description {
+		text-align:left;
+		position:absolute;
+		left: 10px;
+		top: 70px;
+		font-size: 0.7em;
+		line-height: 1.0em;
+		width:300px;
+		height:140px;
+		white-space:normal;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		color: #000;
+	}
+	
+	.established {
+		position:absolute;
+		text-align:center;
+		top:0;
+		right:35px;
+		width:80px;
+		height:16px;
+		font-size: 1em;
+		line-height:1.0em;
+		-webkit-border-radius: 0px 0px 5px 5px;
+	   -moz-border-radius: 0px 0px 5px 5px;
+            border-radius: 0px 0px 5px 5px;
+        background-color: rgba(1,1,1,.3)
+	}
+	
+	.founders {
+		position:absolute;
+		top:
+	}
+	
+	.stage {
+	}
+	
+	.seeking {
+	
+	}
+	
+	.editButton {
+		position:absolute;
+		top:45%;
+		right:-13px;
+		text-align:center;
+		width:60px;
+		height:16px;
+		font-size: 1em;
+		line-height:1.0em;	
+	}
+		
+	.addRow {
+		width:420px;
+		height:170px;
+		margin: 15px -10px 25px 25px;
+		text-align:center;
+		float: left;
+		color:black;
+		-webkit-border-radius: 15px 15px 15px 0;
+		   -moz-border-radius: 15px 15px 15px 0;
+	            border-radius: 15px 15px 15px 0; 
+	    border: 3px solid #BBB;
+	    background-color: rgba(235,235,235,.9);
+    }
+	
+	
+
+.clickable .element:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3 {
+  text-shadow:
+    0 0 10px white,
+    0 0 10px white
+  ;
+}
+
+.clickable .element:hover h2 {
+  color: white;
+}
+
+/**** Example Options ****/
+#FilterContainerIHateCSS{
+	position:fixed;top:0;left:50%;
+	width:1024px;
+	height:220px;
+	overflow:visible;
+	margin: 0 auto;
+	text-align:center;
+	/*outline: 2px dashed blue;*/
+*/
+/* This centers the container of Filter, which needs to be fixed position and offset to the left to fit ont he left hand side of a 
+960 or 1024 grid. */
+	/*outline: 2px dashed blue;*/
+}
+
+#FilterTopWhitespace {
+/* todo: unused
+	position:fixed;top:0px;left:0px;
+	width:100%;height:28px;
+	background-color:white;
+	z-index:1000;*/
+}
+
+#Filter {
+	position:absolute;
+	left:-512px;
+	top:0px;
+	/* 1024 / 2 = 512. 512 - 256 divwidth = 256.  note: 960 grid replaced with superior 1024 grid.*/
+	height:208px;
+	width:1024px;
+	
+	text-align: center;
+	
+	/*border: 2px solid black;*/
+	/*outline:2px dotted red;*/
+	background-color:white;
+	
+	/* grid background effect */
+	background-image:url('../img/grid.jpg');
+	background-size:25%;
+	background-repeat: repeat;
+	
+	margin: 0 auto;
+	
+	z-index:100000;
+	/*border:2px solid black;*/
+}
+
+	#new-filter-container {
+		position:absolute;top:5px;
+	}
+	
+
+	
+		.filterContainer {
+			position:relative;top:2px;left:240px;
+			width:150px;
+			height:27px;
+			border:2px solid #94c2e6;
+			margin-bottom:10px;
+			z-index:1000;
+			white-space: nowrap;
+			overflow:hidden;
+			background-color:white;
+
+		}
+			#searchFilter {
+				position:relative;top:2px;left:280px;
+			}
+
+		.filterTitle {
+
+			width:150px;overflow-x:hidden;	
+			height:27px;
+			line-height: 27px;
+			/*outline:1px dotted blue;*/
+			z-index:1001;			
+			background-color:white;
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+		
+		.filterContent, .selectedFilter{
+		
+			position:absolute;
+			top:0px;
+			left:156px;
+			height:27px;
+			line-height: 27px;
+			width:0;
+			/*border: 3px dotted green;*/
+			z-index:-1001;
+			overflow:hidden;
+			background-color:#DDD;
+			border-radius: 0 8px 8px 0;
+		}
+		
+		.selectedFilter {
+			display:none;
+			z-index:100999;
+			  background-color: #13F;
+			  text-shadow: none;
+			  color: white;
+			  padding: 0 10px 0 10px;
+			  border-radius:0;
+			}		
+		
+		#searchText {
+			font-weight: bold;
+			font-size: 1.1em;
+			position:fixed;top:175px;left:50%;margin-left:-320px;
+			width:100px;
+			display:inline;
+			z-index:100099;
+		}
+		
+		#searchClose {
+			position:fixed;
+			top:178px;left:50%;margin-left:-70px;
+			width:15px; height:15px;
+			line-height:12px;
+			-webkit-border-radius: 12px;
+			   -moz-border-radius: 12px;
+		            border-radius: 12px;
+		    border: 1px solid #444;
+		    text-align:center;
+		    font-size: .85em;
+		    color:black;
+		    background-color:#ddd;
+		    z-index:100099;
+		    /*outline:1px solid red; */
+		    }
+		#searchClose:hover {
+			background-color:#bbb;
+			cursor:pointer;
+		}
+		
+		#searchClose:active {
+			background-color:#444;
+		}
+		
+		#searchHint {
+			display:none;
+			background-color:hsla(40,100%,90%,0);
+			color:hsla(255,100%,0,0);
+			position:fixed;top:172px;left:50%;margin-left:-50px;
+			height:30px;
+			line-height: 30px;
+			width:0;
+			overflow:hidden;
+			display:inline;
+			z-index:100099;	
+		}
+		
+		#hideFilters{} /* only jquery uses this id */
+
+		#showFilters {	display:none;	}
+		
+		.button2 {
+			position:fixed;left:50%;margin-left:380px;
+			width:80px;
+			height:20px;
+			background-color:hsla(197,77%,61%,.8);
+		-webkit-border-radius: 0 0 10px 10px;
+		   -moz-border-radius: 0 0 10px 10px;
+	            border-radius: 0 0 10px 10px;
+			border: 2px solid gray;
+			border-top: 0;
+			color:white;
+			
+		}
+		
+		.button2:hover {
+			background-color:hsla(197,100%,61%,.8);
+			cursor:pointer;
+		}
+		
+		.button2:active {
+				background: #1e5799; /* Old browsers */
+		}
+		
+
+/* Filter Styles */
+
+.option-combo {
+	text-align:center;
+	position:inherit;
+	margin-left:-24px;
+	
+}
+
+.option-combo h3 {
+  margin-bottom: 0.2em;
+  font-size: 15px;
+}
+
+.option-combo h4 { 
+  font-weight: bold;
+}
+
+.option-combo ul .option-combo
+
+.option-combo ul ul {
+    display:inline;
+}
+
+.option-combo li {
+  display:inline;
+  float: left;
+  margin-bottom: 0.2em;
+list-style-type: none;
+
+}
+
+.option-combo li a {
+  display: inline;
+  padding: 0.4em 0.5em;
+  background-color: #DDD;
+  color: #222;
+    list-style-type: none;
+}
+
+.option-combo li a:hover {
+  background-color: #5BF;
+}
+
+.option-combo li a:active {
+  background-color: #39D;
+  -webkit-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+     -moz-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+       -o-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+          box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
+}
+
+
+.option-combo li a {
+  border-left:  1px solid hsla( 0, 0%, 100%, 0.3 );
+  border-right: 1px solid hsla( 0, 0%,   0%, 0.2 );
+}
+
+.option-combo li:first-child a {
+  /*border-radius: 7px 0 0 7px;*/
+  border-left: none;
+}
+
+.option-combo li:last-child a {
+  /*border-radius: 0 10px 10px 0;*/
+	border-right:none;
+}
+
+#Filter a.selected {
+  background-color: #13F;
+  text-shadow: none;
+  color: white;
+}
+
+
+/* Combination filter options*/
+
+ 
+ 
+ 
+ /* Defaults */	
+.color-shape {
+	width:340px;
+	height:190px; /* 350:216 is golden ratio */
+	margin: 5px 0 25px 25px;
+	text-align:center;
+	float: left;
+	color:black;
+	-webkit-border-radius: 15px 15px 15px 0;
+	   -moz-border-radius: 15px 15px 15px 0;
+            border-radius: 15px 15px 15px 0;
+    border: 3px solid gray; 
+
+    background-color: rgba(235,235,235,.9);
+}
+
+.color-shape a {
+  display: block;
+  height: 100%;
+}
+
+.color-shape a:hover {
+    -webkit-border-radius: 15px 15px 15px 0;
+     -moz-border-radius: 15px 15px 15px 0;
+          border-radius: 15px 15px 15px 0;
+  background: white;
+  background: hsla( 0, 0%, 100%, 0.5 );
+}
+
+/**** Horizontal ****/
+
+.horizontal #container {
+  height: 80%;
+}
+
+#copy {
+  max-width: 640px;
+}
+
+/**** Photo demo ****/
+
+.photos .photo {
+  width: 320px;
+  margin: 5px;
+  float: left;
+}
+
+.photos .photo img {
+  display: block;
+  width: 100%;
+}
+
+#content {
+  /* margin-left: 210px;*/
+}
+
+.demos #content {
+  height: 100%;
+}
+
+/**** Docs ****/
+
+
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

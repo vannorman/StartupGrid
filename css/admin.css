@@ -1,0 +1,242 @@
+#AdminWelcome {
+	position:absolute;top:20px;left:50%;
+	height:250px;width:600px;margin-left:-300px;
+	font-size:1.5em;
+	text-align:center;
+	color:#eee;
+}
+
+	#AdminWelcomeTitle {
+	position:absolute;top:0;
+	width:600px;
+	text-align:center;
+	font-size:1.5em;
+	}
+	
+	#AdminWelcomeBody {
+	position:absolute;top:45;width:600px;
+	text-align:left;
+	font-size:0.9em;
+	line-height:30px;
+	}
+
+.editable_textile {
+	position:absolute;top:20px;
+	padding-top:20px;
+}
+
+
+	.claimButton {
+		position:absolute;
+		top:45%;
+		right:-13px;
+		text-align:center;
+		width:60px;
+		height:16px;
+		font-size: 1em;
+		line-height:1.0em;	
+	}
+
+
+
+/* should appear above all other startups. */
+
+.claimedStartup {
+}
+
+
+.my-startup {
+	width:320px;
+	height:250px; /* 350:216 is golden ratio */
+	margin: 5px 0 18px 0px;
+	text-align:center;
+	float: left;
+	color:black;
+	-webkit-border-radius: 9px;
+	   -moz-border-radius: 9px;
+            border-radius: 9px;
+    border: 2px solid #ccc; 
+
+    background-color: rgba(100,235,100,.2);
+  		font-size:.9em;
+}
+
+
+.color-shape {
+	width:320px;
+	height:250px; /* 350:216 is golden ratio */
+	margin: 5px 0 18px 0px;
+	text-align:center;
+	float: left;
+	color:black;
+	-webkit-border-radius: 9px;
+	   -moz-border-radius: 9px;
+            border-radius: 9px;
+    border: 2px solid #ccc; 
+
+    background-color: rgba(235,235,0,.2);
+  		font-size:.9em;
+}
+
+.color-shape a {
+  display: block;
+  height: 100%;
+}
+
+.color-shape a:hover {
+    -webkit-border-radius: 9px;
+     -moz-border-radius: 9px;
+          border-radius: 9px;
+  background: white;
+  background: hsla( 0, 0%, 100%, 0.5 );
+}
+
+
+	.leftText {
+		position:absolute; top:70px;left:1px;
+		height:157px;width:85px;
+		background:transparent;
+		color:black;
+		text-align:right;
+		line-height:23px;padding-top:0px;	padding-right:15px;
+
+	
+	}
+
+	.rightText {
+		position:absolute; top:70px;right:1px;
+		height:157px;width:195px;
+		background:transparent;
+		color:black;
+		text-align:left;
+		line-height:23px;padding-top:0px;	padding-right:15px;
+
+	
+	}
+
+
+	.verticalLine {
+
+		position:absolute; top:81px;left:1px;
+		height:151px;width:83px;
+		background:transparent;
+		color:black;
+		text-align:right;
+		line-height:23px;padding-top:0px;	padding-right:15px;
+
+		border-right:1px solid #444;
+	}
+
+	.industry {
+	
+	}
+
+	.logo {
+		position:absolute;
+		left:10px;
+		top:34px;
+		height:40px;
+		width:40px;
+		}
+	
+	.nameContainer {
+		position:absolute;		left: 0px;		top:0px;
+		width: 320px;
+		height:30px;
+		overflow:hidden;
+		white-space: nowrap;		
+		vertical-align: bottom;
+		text-align:center;
+	}
+	
+	.name {
+		
+		position:absolute;
+		bottom:0;
+		width:320px;
+		font-size: 1.5em;
+		line-height: 1.0em;
+		color: #000;
+		text-align:center;
+		color:black;
+	}
+	
+	.name a {
+		color:black;
+	}
+	
+	.description {
+
+		position:absolute;		left: 2.5%;		top: 0px; width:95%; height: 80px; outline: 1px solid red; padding-top: 30px;
+		font-size: 0.75em;		line-height: 17px;		
+		text-align:left;
+		white-space:normal;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		color: #000;
+		word-wrap:break-word;
+	}
+	
+	.established {
+		position:absolute;		top:166px;		right:10px;
+		width:120px;		height:16px;
+				text-align:center;
+		
+		font-size: .85em;
+		line-height:1.0em;
+		-webkit-border-radius: 0px 0px 5px 5px;
+	   -moz-border-radius: 0px 0px 5px 5px;
+            border-radius: 0px 0px 5px 5px;
+   
+	}
+	
+	.founders {
+		position:absolute;		top: 72px; left:111px;
+		text-align:left;
+	}
+	
+	.foundersTitle {
+		position:absolute; top:116px; right:233px;
+		text-align:right;
+	}
+	
+	.contact {
+		position:absolute;		top: 146px; left:111px;
+		text-align:left;		
+	}
+	
+	.stage {
+		position:absolute;		top:214px; left:111px;
+	
+	}
+	
+	.seeking {
+	
+	}
+	
+	.editButton {
+		position:absolute;
+		top:45%;
+		right:-13px;
+		text-align:center;
+		width:60px;
+		height:16px;
+		font-size: 1em;
+		line-height:1.0em;	
+	}
+		
+	.addRow {
+		width:420px;
+		height:170px;
+		margin: 15px -10px 25px 25px;
+		text-align:center;
+		float: left;
+		color:black;
+		-webkit-border-radius: 15px 15px 15px 0;
+		   -moz-border-radius: 15px 15px 15px 0;
+	            border-radius: 15px 15px 15px 0; 
+	    border: 3px solid #BBB;
+	    background-color: rgba(235,235,235,.9);
+    }
+	
+	
